@@ -23,6 +23,17 @@ function validasiKontak(dataform)
             return(false);
         }
     }
+    if (dataform.nomor.value == "") {
+        alert ("Data Nomor Masih Kosong");
+        dataform.nomor.focus();
+        return false; }
+    
+        if (dataform.Pesan.value == "") {
+            alert ("Data Pesan Masih Kosong");
+            dataform.Pesan.focus();
+            return false;     
+        }
+    
     alert("Pesan Berhasil Dikirim");
     return(true);
 }
