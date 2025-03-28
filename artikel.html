@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #F8F9FA;
+    }
+
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1px 20px;
+        background-color: white;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img{
+        height: 80px;
+    }
+
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display:inline-flex
+    }
+
+    nav ul li{
+        margin: 0px 15px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #E8906E;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    nav ul li a:hover{
+        color: white;
+        background-color:#E8906E;
+    }
+
+    .search-bar{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .search-bar input {
+        padding: 10px;
+        width: 500px;
+        border: 3px solid #E8906E;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+
+    .depan{
+        width: 100%;
+        height: 70vh;
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/gambar/fotoClinic.jpg) no-repeat center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:#F8F9FA;
+        background-size: cover;
+    }
+
+    .depan h1{
+        font-size: 55px;
+        margin: 0;
+    }
+
+    .depan p{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .dashboard{
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .sidebar{
+        width: 20%;
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+        background: #F8F9FA;
+        padding: 20px;
+    }
+
+    .sidebar img{
+        width: 120px; 
+        height: 120px;
+        object-fit: cover; 
+        display: block;
+        margin: 0 auto;
+    }
+
+    .author{
+        text-align: center; 
+    }
+
+    .author h4, .author p {
+        margin: 10px 0; 
+    }
+
+
+    .kontak {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .kontak img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .articles{
+        width: 80%;
+        padding: 50px 20px;
+        background: #F8F9FA;
+        text-align: center;
+        flex: 2;
+    }
+
+    .article-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .article-header2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .article-header h2{
+        margin: 0 auto;
+    }
+    
+    .article-list{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .article-item{
+        padding: 20px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .article-item img{
+        width: 100%;
+    }
+    
+    .article-item h3{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .article-item p{
+        font-size: 14px;
+        color: #555;
+    }
+
+    .article-item a{
+        font-size: 14px;
+        padding: 10px 15px;
+        background: #E85B5B;
+        color: #F8F9FA;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        width: fit-content;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    .article-list-bawah {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap; 
+        margin-top: 10px;   
+    }
+    
+    footer{
+        background: #E8906E;
+        color: white;
+        text-align: center;
+        padding: 2px;
+        font-size: 12px;
+    }
+
+</style>
+    
+</head>
+<body>
+
+    <header>
+            <div class="logo">
+                <a href="index.html">
+                <img src="gambar/logowhite.jpg" alt="KuSehat logo">
+                </a>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Cari artikel kesehatan...">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="artikel.html">Artikel</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+    </header>
+    
+    <div class="content">
+        <div class="depan">
+            <h1>Artikel Seputar Kesehatan</h1>
+            <p>Informasi yang mungkin bisa membantu anda</p>
+        </div>
+    </div>
+
+<div class="dashboard">
+
+    <div class="articles">
+            <div class="article-list">
+                <div class="article-item">
+                    <img src="gambar/drink.jpg" alt="Artikel 1">
+                    <h3>Manfaat Minum Air Putih</h3>
+                    <p>Menjaga tubuh tetap terhidrasi sangat penting untuk kesehatan...</p>
+                    <a href="artikel1.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/jogging.jpg" alt="Artikel 2">
+                    <h3>Pentingnya Olahraga Rutin</h3>
+                    <p>Olahraga bisa membantu mengurangi stres dan meningkatkan kesehatan jantung...</p>
+                    <a href="artikel2.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/food.jpg" alt="Artikel 3">
+                    <h3>Pola Makan Sehat untuk Hidup Lebih Baik</h3>
+                    <p> Tips mengatur asupan gizi seimbang...</p>
+                    <a href="artikel3.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/stress.jpg" alt="Artikel 4">
+                    <h3>Cara Mengelola Stres dengan Baik</h3>
+                    <p>eknik relaksasi dan mindfulness untuk kesehatan mental...</p>
+                    <a href="artikel4.html">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="article-list">
+                <div class="article-item">
+                    <img src="gambar/sleep.jpg" alt="Artikel 5">
+                    <h3>Manfaat Tidur yang Cukup bagi Tubuh</h3>
+                    <p>Pengaruh tidur yang berkualitas terhadap produktivitas...</p>
+                    <a href="artikel5.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/fast.jpg" alt="Artikel 6">
+                    <h3>Bahaya Makanan Cepat Saji</h3>
+                    <p>Dampak konsumsi fast food bagi kesehatan jangka panjang...</p>
+                    <a href="artikel6.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/fat.jpg" alt="Artikel 7">
+                    <h3>Cara Menjaga Berat Badan Ideal</h3>
+                    <p>Tips sederhana untuk menjaga keseimbangan berat badan...</p>
+                    <a href="artikel7.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/breakfast.jpg" alt="Artikel 8">
+                    <h3>Pentingnya Sarapan Sehat</h3>
+                    <p>Bagaimana sarapan memengaruhi energi dan konsentrasi...</p>
+                    <a href="artikel8.html">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="article-list">
+                <div class="article-item">
+                    <img src="gambar/lazy.jpg" alt="Artikel 9">
+                    <h3>Dampak Buruk Kurang Bergerak (Sedentary Lifestyle)</h3>
+                    <p>Bahaya kebiasaan duduk terlalu lama....</p>
+                    <a href="artikel9.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/eye.jpg" alt="Artikel 10">
+                    <h3>Tips Menjaga Kesehatan Mata di Era Digital</h3>
+                    <p>Cara mengurangi ketegangan mata akibat layar gadget....</p>
+                    <a href="artikel10.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/mental.jpg" alt="Artikel 11">
+                    <h3>Pentingnya Kesehatan Mental dalam Kehidupan Sehari-hari</h3>
+                    <p>Mengapa menjaga kesehatan mental sama pentingnya dengan kesehatan fisik, serta cara mengelolanya....</p>
+                    <a href="artikel11.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/UV.jpg" alt="Artikel 12">
+                    <h3>Manfaat Berjemur di Bawah Sinar Matahari Pagi</h3>
+                    <p>Bagaimana sinar matahari pagi membantu tubuh mendapatkan vitamin D yang baik untuk kesehatan tulang dan sistem kekebalan tubuh....</p>
+                    <a href="artikel2.html">Baca Selengkapnya</a>
+                </div>
+            </div>
+
+</div>
+    
+    <div class="sidebar">
+        
+        <div class="author">
+            <h3>Tentang Penulis</h3>
+            <img src="gambar/My photo.jpg" alt="Foto Penulis">
+            <h4>Davin Pramudia</h4>
+            <p>Mahasiswa Teknologi Informasi, Angkatan 23, Asal Toboali, Bangka Selatan.</p>
+                <div class="kontak">
+                    <a href="https://www.facebook.com/share/19xAPWQWMn/"><img src="gambar/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/davin_pramudiazz"><img src="gambar/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <footer>
+        <p>©2025 Davin Pramudia ~ Teknologi Informasi ~ Angkatan 23</p>
+    </footer>
+</body>
+</html>

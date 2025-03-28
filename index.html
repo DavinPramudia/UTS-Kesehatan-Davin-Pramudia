@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <script src="validasi.js"></script>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #F8F9FA;
+    }
+
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1px 20px;
+        background-color: white;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img{
+        height: 80px;
+    }
+
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display:inline-flex
+    }
+
+    nav ul li{
+        margin: 0px 15px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #E8906E;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    nav ul li a:hover{
+        color: white;
+        background-color:#E8906E;
+    }
+
+    .search-bar{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .search-bar input {
+        padding: 10px;
+        width: 500px;
+        border: 3px solid #E8906E;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+
+    .depan{
+        width: 100%;
+        height: 70vh;
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/gambar/dokter.jpg) no-repeat center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:#F8F9FA;
+        background-size: cover;
+    }
+
+    .depan h1{
+        font-size: 55px;
+        margin: 0;
+    }
+
+    .depan p{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .dashboard{
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .sidebar{
+        width: 20%;
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+        background: #F8F9FA;
+        padding: 20px;
+    }
+
+    .sidebar img{
+        width: 120px; 
+        height: 120px;
+        object-fit: cover; 
+        display: block;
+        margin: 0 auto;
+    }
+
+    .author{
+        text-align: center; 
+    }
+
+    .author h4, .author p {
+        margin: 10px 0; 
+    }
+
+
+    .kontak{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .kontak img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .articles{
+        width: 80%;
+        padding: 50px 20px;
+        background: #F8F9FA;
+        text-align: center;
+        flex: 2;
+    }
+
+    .article-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .article-header2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .article-header h2{
+        margin: 0 auto;
+    }
+    
+    .article-list{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .article-item{
+        padding: 20px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .article-item img{
+        width: 100%;
+    }
+    
+    .article-item h3{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .article-item p{
+        font-size: 14px;
+        color: #555;
+    }
+
+    .article-item a{
+        font-size: 14px;
+        padding: 10px 15px;
+        background: #E85B5B;
+        color: #F8F9FA;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        width: fit-content;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    .article-list-bawah{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap; 
+        margin-top: 10px;   
+    }
+
+
+    .quotes{
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        color: #555;
+        background-color: #F8F9FA;
+
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        padding: 25px;
+        width: 40%;
+        margin: auto;
+    }
+
+    .form h3{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    form input,
+    form textarea{
+        width: 50%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 2px solid #E8906E;
+        border-radius: 5px;
+        font-size: 16px;
+}
+
+    form button{
+        background-color: #E8906E;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    footer{
+        background: #E8906E;
+        color: white;
+        text-align: center;
+        padding: 2px;
+        font-size: 12px;
+    }
+
+</style>
+    
+</head>
+<body>
+
+    <header>
+            <div class="logo">
+                <a href="index.html">
+                <img src="gambar/logowhite.jpg" alt="KuSehat logo">
+                </a>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Cari artikel kesehatan...">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="artikel.html">Artikel</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+    </header>
+    
+    <div class="content">
+        <div class="depan">
+            <h1>KuSehat</h1>
+            <p>Temukan informasi kesehatan terbaru untuk hidup lebih sehat</p>
+        </div>
+    </div>
+
+<div class="dashboard">
+
+    <div class="articles">
+        <div class="article-header">
+            <h2>Artikel Terkait Kesehatan</h2>
+        </div>
+            <div class="article-list">
+                <div class="article-item">
+                    <img src="gambar/drink.jpg" alt="Artikel 1">
+                    <h3>Manfaat Minum Air Putih</h3>
+                    <p>Menjaga tubuh tetap terhidrasi sangat penting untuk kesehatan...</p>
+                    <a href="artikel1.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/jogging.jpg" alt="Artikel 2">
+                    <h3>Pentingnya Olahraga Rutin</h3>
+                    <p>Olahraga bisa membantu mengurangi stres dan meningkatkan kesehatan jantung...</p>
+                    <a href="artikel2.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/food.jpg" alt="Artikel 3">
+                    <h3>Pola Makan Sehat untuk Hidup Lebih Baik</h3>
+                    <p> Tips mengatur asupan gizi seimbang...</p>
+                    <a href="artikel3.html">Baca Selengkapnya</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/stress.jpg"">
+                    <h3>Lihat Selengkapnya</h3>
+                    <p>...</p>
+                    <a href="artikel.html">Lihat Semua Artikel</a>
+                </div>
+            </div>
+
+        <div class="article-header2">
+                <h2>Website Kesehatan Lainnya</h2>
+        </div>
+            <div class="article-list-bawah">
+                <div class="article-item">
+                    <img src="gambar/halodoc.webp" alt="Artikel 5">
+                    <p>Platform layanan kesehatan online terpercaya.</p>
+                    <a href="https://www.halodoc.com" target="_blank">Kunjungi Halodoc</a>
+                </div>
+                <div class="article-item">
+                    <img src="gambar/guesehat.png" alt="Artikel 5">
+                    <p>Informasi kesehatan dan konsultasi dokter.</p>
+                    <a href="https://www.guesehat.com/" target="_blank">Kunjungi Guesehat</a>
+                </div>
+            </div>
+    </div>
+    
+    <div class="sidebar">
+        
+        <div class="author">
+            <h3>Tentang Penulis</h3>
+            <img src="gambar/My photo.jpg" alt="Foto Penulis">
+            <h4>Davin Pramudia</h4>
+            <p>Mahasiswa Teknologi Informasi, Angkatan 23, Asal Toboali, Bangka Selatan.</p>
+                <div class="kontak">
+                    <a href="https://www.facebook.com/share/19xAPWQWMn/"><img src="gambar/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/davin_pramudiazz"><img src="gambar/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div>
+    <section id="kontak">
+    <form onsubmit="return validasiKontak(this)">
+        <div class="form">
+            <h3>Masukkan Pesanmu Disini</h3>
+            <form onsubmit="return validasiKontak(this)">
+                <input type="text" id="nama" placeholder="Masukan Nama...."/>
+                <input type="email" id="email" placeholder="Masukan Email..."/>
+                <textarea id="Pesan" name="Pesan" rows="4" placeholder="Masukan Pesan...."></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div> 
+    </form>
+    </section>
+</div>
+
+
+
+<div class="quotes">
+    <p>"Kesehatan adalah investasi terbaik untuk masa depan."</p>
+    <p>"Jaga tubuhmu, agar jiwamu tetap kuat."</p>
+</div>
+
+    <footer>
+        <p>©2025 Davin Pramudia ~ Teknologi Informasi ~ Angkatan 23</p>
+    </footer>
+</body>
+</html>

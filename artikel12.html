@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel 12</title>
+
+    <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #F8F9FA;
+    }
+
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1px 20px;
+        background-color: white;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img{
+        height: 80px;
+    }
+
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display:inline-flex
+    }
+
+    nav ul li{
+        margin: 0px 15px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #E8906E;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    nav ul li a:hover{
+        color: white;
+        background-color:#E8906E;
+    }
+
+    .search-bar{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .search-bar input {
+        padding: 10px;
+        width: 500px;
+        border: 3px solid #E8906E;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+
+    .content{
+        margin: 10px;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #F8F9FA;
+        font-size: 16px;
+    }
+
+    .content h1{
+        text-align: center;
+    }
+
+    .content img{
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .content a{
+        font-size: 14px;
+        padding: 10px 15px;
+        background: #E85B5B;
+        color: #F8F9FA;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        width: fit-content;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    footer{
+        background: #E8906E;
+        color: white;
+        text-align: center;
+        padding: 2px;
+        font-size: 12px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="gambar/logowhite.jpg" alt="KuSehat logo">
+            </a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Cari artikel kesehatan...">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="index.html#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div class="content">
+    <h1>Manfaat Berjemur di Bawah Sinar Matahari Pagi</h1>
+    <img src="gambar/UV.jpg" alt="Berjemur di Pagi Hari">
+    <p>Berjemur di bawah sinar matahari pagi memberikan banyak manfaat bagi tubuh.</p>
+
+    <h3>Manfaat Berjemur di Pagi Hari</h3>
+    <ul>
+        <li>Membantu produksi Vitamin D, yang baik untuk tulang.</li>
+        <li>Meningkatkan sistem kekebalan tubuh.</li>
+        <li>Membantu mengurangi stres dan meningkatkan suasana hati.</li>
+    </ul>
+
+    <h3>Cara Berjemur yang Benar</h3>
+    <ul>
+        <li>Lakukan selama 10-15 menit antara pukul 07.00 - 09.00 pagi.</li>
+        <li>Gunakan pakaian yang memungkinkan kulit terkena sinar matahari langsung.</li>
+        <li>Hindari terlalu lama di bawah sinar matahari untuk mencegah kulit terbakar.</li>
+    </ul>
+
+    <p>Berjemur secara rutin akan memberikan manfaat kesehatan yang luar biasa bagi tubuh.</p>
+    <a class="back-button" href="artikel.html">Kembali</a>
+</div>
+
+<footer>
+    <p>©2025 Davin Pramudia ~ Teknologi Informasi ~ Angkatan 23</p>
+</footer>
+
+</body>
+</html>

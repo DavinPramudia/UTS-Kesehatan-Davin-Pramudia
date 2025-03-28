@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel 5</title>
+
+    <style>
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #F8F9FA;
+    }
+
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1px 20px;
+        background-color: white;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img{
+        height: 80px;
+    }
+
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display:inline-flex
+    }
+
+    nav ul li{
+        margin: 0px 15px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #E8906E;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    nav ul li a:hover{
+        color: white;
+        background-color:#E8906E;
+    }
+
+    .search-bar{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .search-bar input {
+        padding: 10px;
+        width: 500px;
+        border: 3px solid #E8906E;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+
+    .content{
+        margin: 10px;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #F8F9FA;
+        font-size: 16px;
+    }
+
+    .content h1{
+        text-align: center;
+    }
+
+    .content img{
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .content a{
+        font-size: 14px;
+        padding: 10px 15px;
+        background: #E85B5B;
+        color: #F8F9FA;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+        width: fit-content;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    footer{
+        background: #E8906E;
+        color: white;
+        text-align: center;
+        padding: 2px;
+        font-size: 12px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="gambar/logowhite.jpg" alt="KuSehat logo">
+            </a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Cari artikel kesehatan...">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="index.html#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div class="content">
+    <h1>Manfaat Tidur yang Cukup bagi Tubuh</h1>
+    <img src="gambar/sleep.jpg">
+    <p>Tidur adalah waktu bagi tubuh untuk beristirahat dan memperbaiki diri. Sayangnya, banyak orang mengabaikan pentingnya tidur yang cukup, yang berdampak pada kesehatan secara keseluruhan.</p>
+
+    <h3>Manfaat Tidur yang Cukup</h3>
+    <ul>
+        <li>Meningkatkan daya tahan tubuh.</li>
+        <li>Meningkatkan konsentrasi dan memori.</li>
+        <li>Membantu mengontrol berat badan.</li>
+        <li>Menjaga kesehatan jantung.</li>
+    </ul>
+
+    <h3>Tips Tidur Lebih Baik</h3>
+    <ul>
+        <li><strong>Tidur teratur</strong> → Bangun dan tidur pada waktu yang sama setiap hari.</li>
+        <li><strong>Hindari layar gadget sebelum tidur</strong> → Cahaya biru mengganggu produksi hormon tidur.</li>
+        <li><strong>Ciptakan lingkungan tidur yang nyaman</strong> → Ruangan gelap, sejuk, dan tenang.</li>
+    </ul>
+
+    <p>Tidur yang cukup akan membuat tubuh lebih segar dan siap menghadapi aktivitas harian.</p>
+    <a class="back-button" href="artikel.html">Kembali</a>
+</div>
+
+<footer>
+    <p>©2025 Davin Pramudia ~ Teknologi Informasi ~ Angkatan 23</p>
+</footer>
+
+</body>
+</html>
